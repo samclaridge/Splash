@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/bootstrap-theme.css'>
+<link rel='stylesheet' href='assets/css/bootstrap.css'>
+<link rel='stylesheet' href='assets/css/colorbox.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+<script src='assets/js/bootstrap.js'></script>
+<script src='assets/js/jquery.backstretch.min.js'></script>
+<script src='assets/js/device.js'></script>
+<script src='assets/js/jquery.colorbox-min.js'></script>
+<script src='assets/js/app.js'></script>
+  
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <title>New Project</title>
+  
+</head>
+
+<body>
+
+  <header>
+    <nav>
+  <ul>
+    <li></li>
+  </ul>
+</nav>
+  </header>
+
+  <section>
+    <!-- Write your HTML! -->
+    <div class="main-image">
+	    <img class="logo" src="assets/images/Logo@2x.png">
+	    <!-- <p class="text h2">is</p> -->
+	    <p class="h1 text">RELAUNCHING THIS SUMMER</p>
+	    <p class="text h3">
+	    	<!-- WorshipU is releasing an all new monthly subscription program. Watch over 200 HD videos, tune in to streamed interviews, connect with worship mentors, and make new friends on the discussion boards and much more. <br><br> -->Give us your email to be one of the first to start your free trial.
+	    </p>
+
+	     <!-- Begin MailChimp Signup Form-->
+	    	<div class="container signup-form" id="mc_embed_signup">
+		    	<form action="http://bethelmusic.us2.list-manage.com/subscribe/post?u=505dd268f6a76f87ad54ed3d2&amp;id=b73394b5a2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		        	
+		        	<div class="col-sm-12">
+		        		<input type="email" value="" name="EMAIL" class="_input" id="mce-EMAIL" placeholder="Email Address" required>
+		        	</div>
+		          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		        	<div class="col-sm-12" style="position: absolute; left: -5000px;">
+		        		<input type="text" name="b_505dd268f6a76f87ad54ed3d2_b73394b5a2" value="">
+		        	</div>
+		        	<div class="col-sm-12 clear">
+		          	<input type="submit" value="Keep Me Posted" name="subscribe" id="mc-embedded-subscribe" class="_button">
+		        	</div>
+		        	<div class="col-sm-12">
+	    				<a class="video-button youtube cboxElement" href="http://www.youtube.com/embed/mTFMPZJC-7k?rel=0&autoplay=1&wmode=transparent">Watch Video</a>
+
+	    			</div>
+		        </form>
+	    	</div>
+	    	
+	  
+	      <!--End mc_embed_signup-->
+	  
+<!-- 	    	<a class='youtube cboxElement' href="http://www.youtube.com/embed/mTFMPZJC-7k?rel=0&autoplay=1&wmode=transparent"/>
+	    		<img class="image devices" src="assets/images/Devices1.png">
+	 		</a>
+	  
+	   		<div class="videoWrapper">
+		      <!-- Copy & Pasted from YouTube
+		      <iframe width="560" height="349" src="http://www.youtube.com/embed/mTFMPZJC-7k" frameborder="0" allowfullscreen></iframe>
+		    </div>
+	   -->
+	    	<a class="signin_button" href="http://www.worshipu.com/users/sign_in">Sign In</a>
+
+	    	<!--<p class="text h4">Copyright WorshipU 2014</p>-->
+  
+	</div>
+
+  </section>
+  
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+/* Write your CSS! */
+
+@font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url(../../fonts/proximanova-sbold-webfont.eot);
+    src: url(../../fonts/proximanova-sbold-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../../fonts/proximanova-sbold-webfont.woff) format('woff'),
+         url(../../fonts/proximanova-sbold-webfont.ttf) format('truetype'),
+         url(../../fonts/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url(../../fonts/proximanova-reg-webfont.eot);
+    src: url(../../fonts/proximanova-reg-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../../fonts/proximanova-reg-webfont.woff) format('woff'),
+         url(../../fonts/proximanova-reg-webfont.ttf) format('truetype'),
+         url(../../fonts/proximanova-reg-webfont.svg#proxima_nova_rgregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+.signup-form {
+  width: 50%;
+  max-width: 600px;
+
+}
+
+.signin_button {
+  -webkit-transition: all 0.3s ease-in-out;
+  font-family: 'proxima_nova_rgregular';
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  width: 100px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-decoration: none;
+}
+
+.signin_button:hover {
+  background-color: #fff;
+  color: #acc1cd;
+  text-decoration: none;
+}
+
+.signin_button:visited {
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  height: auto;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.h1 {
+  font: normal 1.667em/1 'proxima_nova_ltsemibold';
+  letter-spacing: 3px;
+  margin-top: 2%;
+  text-align: center;
+  color: #fff;
+}
+
+.h2 {
+  font-family: georgia;
+  font-style: italic;
+  margin-top: 2%;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+}
+
+.h3 {
+  margin-top: 2%;
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  color: #fff;
+  font-family: 'proxima_nova_rgregular';
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.text.h4 {
+  font-family: 'proxima_nova_rgregular';
+  font-size: .8em;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+._input {
+  font: normal 1em 'proxima_nova_rgregular';
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff);
+  font-size: 1.2em;
+  color: #4f4f4f;
+}
+
+._button {
+  -webkit-transition: all 0.3s ease-in-out;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  font: normal 1em/1.38 'proxima_nova_ltsemibold';
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #6fda8c;
+}
+
+.video-button {
+  -webkit-transition: all 0.3s ease-in-out;
+  font-family: "proxima_nova_ltsemibold";
+  font-size: 1em;
+  color: #4f4f4f;
+  background: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #4f4f4f;
+  display: inline-block;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 20px; 
+  text-decoration: none;
+}
+
+.video-button:hover {
+  background-color: #4f4f4f;
+  text-decoration: none;
+  color: #d0cbc6;
+
+}
+
+._button:hover {
+  background-color: #66c680;
+  color: #fff;
+}
+
+._button:active {
+  background-color: #008E45;
+  color: #f0f0f0;
+}
+
+.devices {
+  width: 80%;
+  margin-top: 120px;
+}
+
+.devices:hover {
+  opacity: 0.9;
+}
+
+.devices:active {
+  opacity: 1;
+}
+
+.myoutube {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+
+.videoWrapper {
+  display: none;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 991) {
+    
+    .signup-form {
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media(max-width: 768px) {
+
+  .logo {
+    width: 60%;
+  }
+  
+    .signup-form {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}
+
+@media(max-width: 580px) {
+  
+  .logo {
+    margin-top: 80px;
+    width: 70%;
+  }
+
+  .h1 {
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .h3 {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+}
+
+
+@media(max-width: 440px) {
+  
+  .logo {
+    width: 80%;
+  }
+
+  .h3 {
+    margin-top: 4%;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .h1 {
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .signup-form {
+    width: 100%;
+    margin:0 auto;
+    
+  }
+
+
+}
+
+html {
+  height: 100%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+
+  /* Don't forget your Retina CSS! */
+  
+  body {
+    background-size: 72px 72px;
+  }
+
+}
