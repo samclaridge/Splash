@@ -341,9 +341,14 @@
   }
   
   .signup-form {
-    width: 100%;
-    margin:0 auto;
+    width: 104%;
+    margin-right: -2%;
+    margin-left: -2%;
     
+  }
+
+  .signin_button {
+    margin-right: 6px;
   }
 
   ._button {
