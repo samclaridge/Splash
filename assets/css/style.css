@@ -77,8 +77,8 @@
 }
 
 .signin_button:hover {
-  background-color: #fff;
-  color: #acc1cd;
+  opacity: .7;
+  color: #282b1a;
   text-decoration: none;
 }
 
