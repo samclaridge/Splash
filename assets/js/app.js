@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   // Write your Javascript!
 
-	$.backstretch("assets/images/background4.1.jpg");
+	$.backstretch("assets/images/background13.jpg");
 	
 	set_device_type();
 	
